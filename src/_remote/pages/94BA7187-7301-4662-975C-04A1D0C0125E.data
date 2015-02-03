@@ -42,11 +42,11 @@
 			<key>actionuid</key>
 			<string>remote.alfred.runworkflow</string>
 			<key>buttoniconid</key>
-			<string>B45CCDD7-9A84-46C5-A0B6-A4A0FBEE9C8A</string>
+			<string>843B039B-159C-4E7B-9B68-3B5AD975EAF3</string>
 			<key>buttonlabel</key>
 			<string>Continue Watching</string>
 			<key>itemuid</key>
-			<string>41B734E2-72BA-4DA1-B356-C8D4781E7700</string>
+			<string>741920A9-1232-4871-8219-797DE0F1CD13</string>
 		</dict>
 		<dict/>
 		<dict>
@@ -178,6 +178,6 @@
 	<key>subtitle</key>
 	<string>Control Netflix with Alfred Remote</string>
 	<key>title</key>
-	<string>Netflix Remote</string>
+	<string>Nf Remote</string>
 </dict>
 </plist>

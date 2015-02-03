@@ -4,6 +4,8 @@
 <dict>
 	<key>bundleid</key>
 	<string>com.agrill.nf.remote</string>
+	<key>category</key>
+	<string>Internet</string>
 	<key>connections</key>
 	<dict>
 		<key>1CAD3A76-7CC5-489E-BDED-F4E1B781AE7F</key>
@@ -21,7 +23,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>43798523-47E1-48E6-952F-9A76E359F735</string>
+				<string>566F5138-F34E-4CED-B463-BF44203AAB67</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -32,7 +34,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>43798523-47E1-48E6-952F-9A76E359F735</string>
+				<string>93F57701-134D-49B1-AC82-73959BEE596C</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -43,7 +45,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>43798523-47E1-48E6-952F-9A76E359F735</string>
+				<string>D5F6E80B-ADDB-4084-94DC-06F9C794D3B0</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -54,7 +56,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>43798523-47E1-48E6-952F-9A76E359F735</string>
+				<string>309FEEB0-C5D1-4A72-9527-3155AE613F80</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -65,7 +67,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>43798523-47E1-48E6-952F-9A76E359F735</string>
+				<string>B9677E9F-8AA1-4076-9404-0EBD99389ED7</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -76,7 +78,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>43798523-47E1-48E6-952F-9A76E359F735</string>
+				<string>F80C91AB-E4B7-40D5-9770-12876739B90B</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -87,7 +89,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>43798523-47E1-48E6-952F-9A76E359F735</string>
+				<string>7EAF9C4B-B1DB-430C-B17F-986611345046</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -98,7 +100,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>43798523-47E1-48E6-952F-9A76E359F735</string>
+				<string>8E218341-7953-4684-8D2B-B9B592CC0330</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -120,9 +122,9 @@
 			<key>config</key>
 			<dict>
 				<key>argument</key>
-				<string>m:958,466 w:100 c:958,466</string>
+				<string></string>
 				<key>argumenttype</key>
-				<integer>3</integer>
+				<integer>0</integer>
 				<key>triggerid</key>
 				<string>NF.Remote.Continue</string>
 				<key>triggername</key>
@@ -140,10 +142,27 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>escaping</key>
+				<integer>127</integer>
+				<key>script</key>
+				<string>python ./nfremote.py m:958,466 w:100 c:958,466</string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>93F57701-134D-49B1-AC82-73959BEE596C</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>argument</key>
-				<string>m:221,977 w:100 c:221,977</string>
+				<string></string>
 				<key>argumenttype</key>
-				<integer>3</integer>
+				<integer>0</integer>
 				<key>triggerid</key>
 				<string>NF.Remote.PauseResume</string>
 				<key>triggername</key>
@@ -161,10 +180,27 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>escaping</key>
+				<integer>127</integer>
+				<key>script</key>
+				<string>python ./nfremote.py m:221,977 w:100 c:221,977</string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>D5F6E80B-ADDB-4084-94DC-06F9C794D3B0</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>argument</key>
-				<string>m:283,974 w:200 c:283,772</string>
+				<string></string>
 				<key>argumenttype</key>
-				<integer>3</integer>
+				<integer>0</integer>
 				<key>triggerid</key>
 				<string>NF.Remote.Volume100</string>
 				<key>triggername</key>
@@ -182,10 +218,44 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>escaping</key>
+				<integer>127</integer>
+				<key>script</key>
+				<string>python ./nfremote.py m:283,974 w:200 c:283,772</string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>B9677E9F-8AA1-4076-9404-0EBD99389ED7</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>escaping</key>
+				<integer>127</integer>
+				<key>script</key>
+				<string>python ./nfremote.py m:283,974 w:200 c:283,795</string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>309FEEB0-C5D1-4A72-9527-3155AE613F80</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>argument</key>
-				<string>m:283,974 w:200 c:283,795</string>
+				<string></string>
 				<key>argumenttype</key>
-				<integer>3</integer>
+				<integer>0</integer>
 				<key>triggerid</key>
 				<string>NF.Remote.Volume80</string>
 				<key>triggername</key>
@@ -206,7 +276,7 @@
 				<key>escaping</key>
 				<integer>0</integer>
 				<key>script</key>
-				<string>python ./nfremote.py {query}</string>
+				<string>python ./nfremote.py m:283,974 w:200 c:283,818</string>
 				<key>type</key>
 				<integer>0</integer>
 			</dict>
@@ -221,9 +291,9 @@
 			<key>config</key>
 			<dict>
 				<key>argument</key>
-				<string>m:283,974 w:200 c:283,818</string>
+				<string></string>
 				<key>argumenttype</key>
-				<integer>3</integer>
+				<integer>0</integer>
 				<key>triggerid</key>
 				<string>NF.Remote.Volume60</string>
 				<key>triggername</key>
@@ -242,9 +312,9 @@
 			<key>config</key>
 			<dict>
 				<key>argument</key>
-				<string>m:283,974 w:200 c:283,977</string>
+				<string></string>
 				<key>argumenttype</key>
-				<integer>3</integer>
+				<integer>0</integer>
 				<key>triggerid</key>
 				<string>NF.Remote.Volume0</string>
 				<key>triggername</key>
@@ -262,10 +332,44 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>escaping</key>
+				<integer>127</integer>
+				<key>script</key>
+				<string>python ./nfremote.py m:283,974 w:200 c:283,977</string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>8E218341-7953-4684-8D2B-B9B592CC0330</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>escaping</key>
+				<integer>127</integer>
+				<key>script</key>
+				<string>python ./nfremote.py m:82,82 w:100 c:82,82</string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>F80C91AB-E4B7-40D5-9770-12876739B90B</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>argument</key>
-				<string>m:82,82 w:100 c:82,82</string>
+				<string></string>
 				<key>argumenttype</key>
-				<integer>3</integer>
+				<integer>0</integer>
 				<key>triggerid</key>
 				<string>NF.Remote.BackToBrowsing</string>
 				<key>triggername</key>
@@ -283,10 +387,27 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>escaping</key>
+				<integer>127</integer>
+				<key>script</key>
+				<string>python ./nfremote.py m:1470,977 w:100 c:1465,977</string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>7EAF9C4B-B1DB-430C-B17F-986611345046</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>argument</key>
-				<string>m:1470,977 w:100 c:1470,977</string>
+				<string></string>
 				<key>argumenttype</key>
-				<integer>3</integer>
+				<integer>0</integer>
 				<key>triggerid</key>
 				<string>NF.Remote.Next</string>
 				<key>triggername</key>
@@ -304,10 +425,27 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>escaping</key>
+				<integer>127</integer>
+				<key>script</key>
+				<string>python ./nfremote.py m:1561,783 w:100 c:1561,783</string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>566F5138-F34E-4CED-B463-BF44203AAB67</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>argument</key>
-				<string>m:1561,783 w:100 c:1561,783</string>
+				<string></string>
 				<key>argumenttype</key>
-				<integer>3</integer>
+				<integer>0</integer>
 				<key>triggerid</key>
 				<string>NF.Remote.PlayNext</string>
 				<key>triggername</key>
@@ -334,6 +472,11 @@ NfRemote https://github.com/andreasgrill/alfred-nfremote</string>
 			<key>ypos</key>
 			<real>490</real>
 		</dict>
+		<key>309FEEB0-C5D1-4A72-9527-3155AE613F80</key>
+		<dict>
+			<key>ypos</key>
+			<real>370</real>
+		</dict>
 		<key>43798523-47E1-48E6-952F-9A76E359F735</key>
 		<dict>
 			<key>ypos</key>
@@ -344,20 +487,50 @@ NfRemote https://github.com/andreasgrill/alfred-nfremote</string>
 			<key>ypos</key>
 			<real>970</real>
 		</dict>
+		<key>566F5138-F34E-4CED-B463-BF44203AAB67</key>
+		<dict>
+			<key>ypos</key>
+			<real>970</real>
+		</dict>
 		<key>72BD7C9D-01FC-4891-99FF-49CA86E0357C</key>
 		<dict>
 			<key>ypos</key>
 			<real>10</real>
+		</dict>
+		<key>7EAF9C4B-B1DB-430C-B17F-986611345046</key>
+		<dict>
+			<key>ypos</key>
+			<real>850</real>
 		</dict>
 		<key>855B40D4-755E-4B98-8DA6-D0B314C013C2</key>
 		<dict>
 			<key>ypos</key>
 			<real>130</real>
 		</dict>
+		<key>8E218341-7953-4684-8D2B-B9B592CC0330</key>
+		<dict>
+			<key>ypos</key>
+			<real>610</real>
+		</dict>
+		<key>93F57701-134D-49B1-AC82-73959BEE596C</key>
+		<dict>
+			<key>ypos</key>
+			<real>10</real>
+		</dict>
 		<key>A04C7965-80D1-4EDD-BD8D-C448D4A44F52</key>
 		<dict>
 			<key>ypos</key>
 			<real>370</real>
+		</dict>
+		<key>B9677E9F-8AA1-4076-9404-0EBD99389ED7</key>
+		<dict>
+			<key>ypos</key>
+			<real>250</real>
+		</dict>
+		<key>D5F6E80B-ADDB-4084-94DC-06F9C794D3B0</key>
+		<dict>
+			<key>ypos</key>
+			<real>130</real>
 		</dict>
 		<key>D8A9BD9E-50B9-4E7D-BB2C-6019AD78D2CD</key>
 		<dict>
@@ -378,6 +551,11 @@ NfRemote https://github.com/andreasgrill/alfred-nfremote</string>
 		<dict>
 			<key>ypos</key>
 			<real>610</real>
+		</dict>
+		<key>F80C91AB-E4B7-40D5-9770-12876739B90B</key>
+		<dict>
+			<key>ypos</key>
+			<real>730</real>
 		</dict>
 	</dict>
 	<key>webaddress</key>
