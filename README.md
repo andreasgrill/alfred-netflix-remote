@@ -19,6 +19,11 @@ Netflix Remote only works when your browser has focus and runs in __full screen_
  * Go back to browsing (Stop Netflix)
  * Play next
 
+## Version History
+ * 1.2 Added window autodetection through Quartz
+ * 1.1 Small bugfixing release
+ * 1.0 Initial release
+
 ## Screenshot
 ![Screenshot](./screenshot.png)
 
