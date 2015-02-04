@@ -8,7 +8,7 @@ This workflow emulates mouse movement and clicks to gain access to the Netflix B
 The icons are from [ionicons][ionicons].
 
 ## How to get it working / Troubleshooting
-Netflix Remote only works when your browser runs on your main display in __full screen__ mode. Otherwise the mouse emulation won't find the correct position.
+Netflix Remote only works when your browser has focus and runs in __full screen__ mode. Otherwise the mouse emulation won't find the correct position.
 
 ## What it can do
  * Press play/pause
