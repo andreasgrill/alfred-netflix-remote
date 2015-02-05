@@ -13,12 +13,48 @@ import sys
 import re
 from AppKit import NSScreen, NSWorkspace, NSRunningApplication
 from Quartz import CGWindowListCopyWindowInfo, kCGWindowListOptionOnScreenOnly, kCGNullWindowID, kCGWindowListExcludeDesktopElements
+from Quartz import CGEventCreateKeyboardEvent, CGEventSourceCreate, CGEventPost, kCGEventSourceStateCombinedSessionState, kCGAnnotatedSessionEventTap, CGEventSetFlags, kCGEventFlagMaskShift
 
 referenceWidth = 1920
 referenceHeight = 1080
-reCliArgument = re.compile(r'^(?P<op>[a-z]):(?P<val>[0-9,]+)$')
+reCliArgument = re.compile(r'^(?P<op>[m,w,c]):(?P<val>[0-9,]+)$')
 
-def netflix_remote(commands):
+def netflix_keyboard(commands):
+	commandList = dict(
+		volup = ([126], None, 1),
+		voldown = ([125], None, 1),
+		pauseresume = ([49], None, 1),
+		mute = ([46], None, 1),
+		forward = ([124], None, 1),
+		rewind = ([123], None, 1)
+	)
+
+	#netflix_mouse(["c:640,400", "m:0,300"])
+
+	source = CGEventSourceCreate(kCGEventSourceStateCombinedSessionState)
+	events = []
+
+	for cmd in commands:
+		if cmd[1:] not in commandList:
+			continue
+		cmdProperties = commandList[cmd[1:]]
+
+		for i in range(cmdProperties[2]):
+			for keyCode in cmdProperties[0]:
+				down = CGEventCreateKeyboardEvent(source, keyCode, True)
+				up = CGEventCreateKeyboardEvent(source, keyCode, False)
+				flags = cmdProperties[1]
+				if flags is not None:
+					CGEventSetFlags(down, flags)
+				events.append(down)
+				events.append(up)
+
+	for event in events:
+		CGEventPost(kCGAnnotatedSessionEventTap,event)
+
+
+
+def netflix_mouse(commands):
 	callcmds = ["./cliclick", "m:0,0", "w:1"]
 	browserBounds = get_browser_bounds()
 
@@ -89,4 +125,7 @@ def translate_coordinates(browserBounds, x, y):
 	return (int(round(newX)), int(round(newY)))
 
 if len(sys.argv) > 1:
-	netflix_remote(["m:100,100", "w:50"] + sys.argv[1:] + ["w:50", "m:0,300"])
+	if sys.argv[1][0] == '-':
+		netflix_keyboard(sys.argv[1:])
+	else:
+		netflix_mouse(["m:100,100", "w:50"] + sys.argv[1:] + ["w:50", "m:0,300"])
