@@ -156,16 +156,16 @@
 				<key>autoworkflowuid</key>
 				<true/>
 				<key>triggerid</key>
-				<string>NF.Remote.VolDown</string>
+				<string>NF.Remote.VolUp</string>
 			</dict>
 			<key>actionuid</key>
 			<string>remote.alfred.runworkflow</string>
 			<key>buttoniconid</key>
-			<string>93CFD850-0090-4211-8B23-AF12FDEA6AD3</string>
+			<string>A4A858EF-CF71-44BD-91B5-84BFC3948BA1</string>
 			<key>buttonlabel</key>
-			<string>Vol Down</string>
+			<string>Vol Up</string>
 			<key>itemuid</key>
-			<string>9774DAD9-3EAA-45BC-A486-E627E0BC1DCE</string>
+			<string>77C5F3E8-9CED-4EC7-8CF8-3B95881344A1</string>
 		</dict>
 		<dict>
 			<key>actionconfig</key>
@@ -173,16 +173,16 @@
 				<key>autoworkflowuid</key>
 				<true/>
 				<key>triggerid</key>
-				<string>NF.Remote.VolUp</string>
+				<string>NF.Remote.VolDown</string>
 			</dict>
 			<key>actionuid</key>
 			<string>remote.alfred.runworkflow</string>
 			<key>buttoniconid</key>
-			<string>8F83D522-17EB-46B4-B63A-51CD5F17C4E4</string>
+			<string>0D7E4CD2-71E0-48A0-B9B4-B2B63FEA3693</string>
 			<key>buttonlabel</key>
-			<string>Vol Up</string>
+			<string>Vol Down</string>
 			<key>itemuid</key>
-			<string>9DD78884-542C-450F-A35C-F3EB963C0E8C</string>
+			<string>D96F1B0A-EBFD-4B9C-A4D1-C8FDEA16EDBC</string>
 		</dict>
 		<dict/>
 		<dict/>

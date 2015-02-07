@@ -21,10 +21,9 @@ reCliArgument = re.compile(r'^(?P<op>[m,w,c]):(?P<val>[0-9,]+)$')
 
 def netflix_keyboard(commands):
 	commandList = dict(
-		volup = ([126], None, 1),
-		voldown = ([125], None, 1),
+		volup = ([126], None, 5),
+		voldown = ([125], None, 5),
 		pauseresume = ([49], None, 1),
-		mute = ([46], None, 1),
 		forward = ([124], None, 1),
 		rewind = ([123], None, 1)
 	)
