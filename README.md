@@ -21,6 +21,7 @@ Multiple monitor setups are supported.
  * Press "continue playing"
  * Go back to browsing (Stop Netflix)
  * Play next
+ * Enter fullscreen mode
 
 ## Version History
  * 1.4 Fullscreen button added, better icons for VolUP/Down + BackToBrowsing
