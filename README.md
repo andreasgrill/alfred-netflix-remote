@@ -7,6 +7,9 @@ With this [Alfred][alf] workflow you are able to control Netflix in your browser
 This workflow uses hotkeys and mouse emulation to gain access to the Netflix Browser UI. The mouse emulation is executed by the awesome command line utility [Cliclick][cliclick].
 The icons are from [ionicons][ionicons].
 
+## Where to get it
+This github repo only contains the source of this workflow. Get the workflow package from [Packal][workflow].
+
 ## How to get it working / Troubleshooting
 Netflix Remote sends hotkeys as well as mouse events to your browser, running Netflix. It works best in __full screen__ mode, otherwise some commands that rely on mouse positioning might not work as expected.
 Multiple monitor setups are supported.
@@ -36,3 +39,4 @@ Multiple monitor setups are supported.
 [alfremote]:http://www.alfredapp.com/remote/
 [cliclick]:http://www.bluem.net/en/mac/cliclick/
 [ionicons]:https://github.com/driftyco/ionicons/
+[workflow]:http://www.packal.org/workflow/nf-remote
