@@ -105,6 +105,17 @@
 				<string></string>
 			</dict>
 		</array>
+		<key>D4D15574-9654-4BA6-B4E3-CD2640890312</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>DC2AB2DA-D802-4EEC-817A-F9C29BE32177</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
 		<key>D8A9BD9E-50B9-4E7D-BB2C-6019AD78D2CD</key>
 		<array>
 			<dict>
@@ -657,6 +668,44 @@ python ./nfremote.py -pauseresume</string>
 			<key>version</key>
 			<integer>0</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string></string>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>triggerid</key>
+				<string>NF.Remote.Fullscreen</string>
+				<key>triggername</key>
+				<string>Fullscreen</string>
+				<key>workflowonly</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.remote</string>
+			<key>uid</key>
+			<string>D4D15574-9654-4BA6-B4E3-CD2640890312</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>escaping</key>
+				<integer>127</integer>
+				<key>script</key>
+				<string>python ./nfremote.py -fullscreen</string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>DC2AB2DA-D802-4EEC-817A-F9C29BE32177</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string>Thanks to Carsten Blüm for the awesome CliClick http://www.bluem.net/de/mac/cliclick/
@@ -759,6 +808,11 @@ NfRemote https://github.com/andreasgrill/alfred-nfremote</string>
 			<key>ypos</key>
 			<real>1330</real>
 		</dict>
+		<key>D4D15574-9654-4BA6-B4E3-CD2640890312</key>
+		<dict>
+			<key>ypos</key>
+			<real>1570</real>
+		</dict>
 		<key>D5F6E80B-ADDB-4084-94DC-06F9C794D3B0</key>
 		<dict>
 			<key>ypos</key>
@@ -773,6 +827,11 @@ NfRemote https://github.com/andreasgrill/alfred-nfremote</string>
 		<dict>
 			<key>ypos</key>
 			<real>730</real>
+		</dict>
+		<key>DC2AB2DA-D802-4EEC-817A-F9C29BE32177</key>
+		<dict>
+			<key>ypos</key>
+			<real>1570</real>
 		</dict>
 		<key>E9E17A85-C729-4DC2-8E43-7C73CE187FC5</key>
 		<dict>

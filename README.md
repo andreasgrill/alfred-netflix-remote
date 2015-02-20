@@ -23,6 +23,7 @@ Multiple monitor setups are supported.
  * Play next
 
 ## Version History
+ * 1.4 Fullscreen button added, better icons for VolUP/Down + BackToBrowsing
  * 1.3 Added Rewind/Forward and VolUp/VolDown, now uses hotkeys if possible
  * 1.2 Added window autodetection through Quartz
  * 1.1 Small bugfixing release

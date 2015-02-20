@@ -186,7 +186,6 @@
 		</dict>
 		<dict/>
 		<dict/>
-		<dict/>
 		<dict>
 			<key>actionconfig</key>
 			<dict>
@@ -227,16 +226,33 @@
 				<key>autoworkflowuid</key>
 				<true/>
 				<key>triggerid</key>
+				<string>NF.Remote.Fullscreen</string>
+			</dict>
+			<key>actionuid</key>
+			<string>remote.alfred.runworkflow</string>
+			<key>buttoniconid</key>
+			<string>8EFA7955-18D3-44E0-BDBC-F7FC4AE651A1</string>
+			<key>buttonlabel</key>
+			<string>Fullscreen</string>
+			<key>itemuid</key>
+			<string>28881C9E-EE41-44CC-A1FD-067B3266FEAD</string>
+		</dict>
+		<dict>
+			<key>actionconfig</key>
+			<dict>
+				<key>autoworkflowuid</key>
+				<true/>
+				<key>triggerid</key>
 				<string>NF.Remote.BackToBrowsing</string>
 			</dict>
 			<key>actionuid</key>
 			<string>remote.alfred.runworkflow</string>
 			<key>buttoniconid</key>
-			<string>E4A437F5-61F9-484B-B182-69A7B15C9A97</string>
+			<string>1385C5A9-905B-4591-A002-E6A84E330F6F</string>
 			<key>buttonlabel</key>
 			<string>BackToBrowsing</string>
 			<key>itemuid</key>
-			<string>C9C20570-40F1-479D-A42D-62FE95050D27</string>
+			<string>B5570B58-BBDD-40B3-A8A7-7024186F22D0</string>
 		</dict>
 	</array>
 	<key>subtitle</key>

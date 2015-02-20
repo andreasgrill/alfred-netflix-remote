@@ -21,14 +21,15 @@ reCliArgument = re.compile(r'^(?P<op>[m,w,c]):(?P<val>[0-9,]+)$')
 
 def netflix_keyboard(commands):
 	commandList = dict(
-		volup = ([126], None, 5),
-		voldown = ([125], None, 5),
-		pauseresume = ([49], None, 1),
-		forward = ([124], None, 1),
-		rewind = ([123], None, 1)
+		volup = ([126], None, 1, False),
+		voldown = ([125], None, 1, False),
+		pauseresume = ([49], None, 1, False),
+		forward = ([124], None, 1, False),
+		rewind = ([123], None, 1, False),
+		fullscreen = ([3], None, 1, True),
+		mute = ([46], None, 1, False)
 	)
 
-	#netflix_mouse(["c:640,400", "m:0,300"])
 
 	source = CGEventSourceCreate(kCGEventSourceStateCombinedSessionState)
 	events = []
@@ -38,6 +39,9 @@ def netflix_keyboard(commands):
 			continue
 		cmdProperties = commandList[cmd[1:]]
 
+		if cmdProperties[3]:
+			netflix_mouse(["c:640,400", "m:0,300"])
+
 		for i in range(cmdProperties[2]):
 			for keyCode in cmdProperties[0]:
 				down = CGEventCreateKeyboardEvent(source, keyCode, True)
@@ -46,6 +50,7 @@ def netflix_keyboard(commands):
 				if flags is not None:
 					CGEventSetFlags(down, flags)
 				events.append(down)
+				
 				events.append(up)
 
 	for event in events:
