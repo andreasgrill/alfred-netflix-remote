@@ -215,8 +215,8 @@
 				<key>escaping</key>
 				<integer>127</integer>
 				<key>script</key>
-				<string>#python ./nfremote.py m:221,977 w:100 c:221,977
-python ./nfremote.py -pauseresume</string>
+				<string>python ./nfremote.py m:221,977 w:100 c:221,977
+#python ./nfremote.py -pauseresume</string>
 				<key>type</key>
 				<integer>0</integer>
 			</dict>
