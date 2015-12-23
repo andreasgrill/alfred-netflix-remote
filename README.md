@@ -8,8 +8,9 @@ This workflow uses hotkeys and mouse emulation to gain access to the Netflix Bro
 The icons are from [ionicons][ionicons].
 
 ## How to get it working / Troubleshooting
+Install the workflow and add the remote page in Alfred's Remote tab. Add from `Workflows/Nf Remote`.
+
 Netflix Remote sends hotkeys as well as mouse events to your browser, running Netflix. It works best in __full screen__ mode, otherwise some commands that rely on mouse positioning might not work as expected.
-Multiple monitor setups are supported.
 
 ## What it can do
  * Press play/pause
@@ -24,6 +25,7 @@ Multiple monitor setups are supported.
  * Enter fullscreen mode
 
 ## Version History
+ * 1.5 Use cursor instead of keyboard for Play/Pause
  * 1.4 Fullscreen button added, better icons for VolUP/Down + BackToBrowsing
  * 1.3 Added Rewind/Forward and VolUp/VolDown, now uses hotkeys if possible
  * 1.2 Added window autodetection through Quartz
